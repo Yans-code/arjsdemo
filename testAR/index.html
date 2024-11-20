@@ -1,6 +1,15 @@
 <!-- import aframe and then ar.js with image tracking / location based features -->
-<script src="aframe-master.min.js"></script>
-<script src="aframe-ar-nft.js"></script>
+<script src="https://yans-code.github.io/arjsdemo/testAR/aframe-master.min.js"></script>
+<script src="https://yans-code.github.io/arjsdemo/testAR/aframe-ar-nft.js"></script>
+<script src="https://unpkg.com/vconsole@latest/dist/vconsole.min.js"></script>
+<script>
+  // VConsole 默认会挂载到 `window.VConsole` 上
+  var vConsole = new window.VConsole();
+  // 接下来即可照常使用 `console` 等方法
+    console.log('Hello world');
+     
+    // 结束调试后，可移除掉
+</script>
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -46,7 +55,7 @@
     <!-- 路径不带文件拓展名！【注意】以网站的域名为相对路径 -->
     <a-nft
       type="nft"
-      url="/testAR/descriptors/me/me"
+      url="https://yans-code.github.io/arjsdemo/testAR/descriptors/me/me"
       smooth="true"
       smoothCount="10"
       smoothTolerance=".01"
@@ -54,7 +63,7 @@
     >
         <!-- as a child of the a-nft entity, you can define the content to show. here's a GLTF model entity -->
         <a-entity
-            gltf-model="model/car/scene.gltf"
+            gltf-model="https://yans-code.github.io/arjsdemo/testAR/model/car/scene.gltf"
             scale="30 30 30"
             position="5 0 -40"
 			rotation="-90 0 0"
